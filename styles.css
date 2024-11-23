@@ -1,0 +1,791 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h4, h6 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.section-content {
+    margin-bottom: 30px;
+}
+.section-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+.col-md-5 {
+    padding: 15px;
+}
+@media (max-width: 768px) {
+    h4 {
+        font-size: 1rem;
+    }
+}
+body {
+    background-color: #f9fafb; /* Light gray background */
+}
+/* Content Styling */
+.content {
+    padding: 20px;
+    margin-top: 60px; /* Adjust to avoid content under the navbar */
+}
+
+section {
+    padding: 100px 20px;
+    height: 100vh; /* Make sections large to enable scrolling */
+    margin: 20px 0;
+}
+
+section h1 {
+    font-size: 36px;
+}
+
+section p {
+    font-size: 18px;
+}
+.btns {
+  width: auto;
+  height: auto;
+  line-height: 50px;
+ 
+  border-radius: 8px;
+  color: rgba(47, 167, 120, 0.81);
+    font-size: 35px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-animation-name: hover;
+  animation-name: hover;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+
+  &:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+    opacity: .4;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    -webkit-animation-name: hover-shadow;
+    animation-name: hover-shadow;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+
+ 
+}
+
+@keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@-webkit-keyframes hover-shadow {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+}
+
+@keyframes hover-shadow {
+  0% {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+
+  50% {
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+}
+
+@-webkit-keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+.carousel-item img{
+    height: 500px;
+}
+/* Sticky Navbar Styling */
+.sticky {
+    background-color: #111;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Custom background for Vision section */
+.vision-section {
+    background-color: #f0f8ff; /* Light blue */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Custom background for Mission section */
+.mission-section {
+    background-color: #e6f7ff; /* Light cyan */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Optionally: Add some box shadow for a card-like effect */
+.section-content {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.section-content:hover {
+    transform: scale(1.05); /* Scales the content by 1.05 times */
+}
+
+.navbar-brand img{
+    margin-left:50px;
+}
+/* Zoom effect on navbar logo */
+.navbar-logo {
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    transform-origin: center; /* Zoom from the center */
+}
+
+/* When hovering over the logo */
+.navbar-logo:hover {
+    transform: scale(1.2); /* Zoom the logo by 20% */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed; /* Sticky navbar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Ensures it stays on top of other content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.a1a{
+    background-color: #f9fafb !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)!important;
+}
+.nav-item:hover{
+    background-color: #74a7dd !important;
+}
+
+
+/* Dropdown button styles */
+.navbar-nav .nav-item .dropdown-toggle {
+    color: white !important;
+}
+.navbar-nav{
+    background-color: #53873d;
+    margin-left: 250px !important;
+    color: white !important;
+    font-size: 18px;
+    padding:5px;
+    border-radius: 5px 7px;
+    margin:5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-nav  li {
+    padding:5px;
+    background-color: #555;
+}
+.navbar-nav  li a{
+   
+    color: white !important;
+}
+.navbar-nav .nav-item .dropdown-toggle:hover {
+    color: #f8f9fa !important;
+}
+
+/* Dropdown Menu Styles */
+.navbar-nav .nav-item .dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    left: 0;
+    top: 100%; /* Position below the parent menu item */
+    background-color: #343a40; /* Dark background for dropdown */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px; /* Minimum width for dropdown items */
+    padding: 0;
+}
+
+/* Show dropdown when hovering */
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Styling for each dropdown item */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* Dropdown item hover effect */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #6898c7; /* Darker background on hover */
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Multi-level Dropdown Styles */
+.navbar-nav .nav-item .dropdown-submenu {
+    position: relative; /* For positioning the submenu */
+}
+
+.navbar-nav .nav-item .dropdown-submenu .dropdown-menu {
+    display: none; /* Hide the submenu */
+    left: 100%; /* Position the submenu to the right of the parent */
+    top: 0;
+}
+
+/* Display submenu on hover */
+.navbar-nav .nav-item .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+    /* When the screen size is smaller than large (LG), the dropdowns should be styled accordingly */
+    .navbar-nav .nav-item .dropdown-menu {
+        position: static; /* Change position to static on smaller screens */
+        box-shadow: none;
+    }
+
+    .navbar-nav .nav-item .dropdown-submenu .dropdown-menu {
+        position: static; /* Submenus on mobile should appear below */
+        left: auto;
+        top: auto;
+    }
+}
+
+/* Navbar Toggler Styles */
+.navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+
+
+
+
+
+/* Style for Section Title */
+.section-title {
+    font-size: 1.5rem; /* Size of the title */
+    font-weight: bold; /* Make it bold */
+    color: #333; /* Dark color for the text */
+    text-transform: uppercase; /* Capitalize the title */
+    letter-spacing: 2px; /* Slightly spaced letters */
+}
+
+
+/* Ensure spacing between images */
+.col-md-4 img {
+    display: flex;
+    justify-content: center; /* Center images in columns */
+    align-items: center; /* Vertically center images */
+}
+/* General Style for Certification Images */
+.certification-img {
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initially hide the images */
+    transform: translateX(0); /* Reset transform */
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+.certification-img {
+    opacity: 0; /* Initially hide images */
+    transform: translateX(100px); /* Position images to the right */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transition for opacity and slide */
+}
+.certification-img:hover {
+    transform: scale(1.1) !important; /* Zoom in the image on hover */
+}
+/* Left Animation */
+.certification-img.left {
+    transform: translateX(-100px); /* Position images to the left */
+}
+
+/* Right Animation */
+.certification-img.right {
+    transform: translateX(100px); /* Position images to the right */
+}
+
+/* Add this class when image is in the viewport */
+.certification-img.fade-in {
+    opacity: 1;
+    transform: translateX(0); /* Bring the image to its original position */
+}
+.product-container {
+    text-align: center;
+}
+
+.product-container p {
+    margin-top: 10px; /* Adds spacing between the image and the text */
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit; /* Inherits the text color of the container */
+}
+.product-link p{
+    margin-top:5px;
+}
+/* Style the h2 element */
+.col-md-12 h2 {
+    background-color: #53873d;  /* Green background */
+    color: white;               /* White text color */
+    height: 80px;               /* Set fixed height */
+    display: flex;              /* Use flexbox for centering */
+    justify-content: center;    /* Center content horizontally */
+    align-items: center;        /* Center content vertically */
+    font-size: 2.5rem;          /* Make the font size larger */
+    font-weight: bold;          /* Make the font bold */
+}
+
+/* Add margin-top for the title */
+.a1 {
+    margin-top: 10px;
+}
+.s2 p {
+    font-size: 1.0rem; /* Adjusts font size for readability */
+    line-height: 1.6;  /* Increases line height for better spacing */
+    text-align: justify;
+ 
+}
+
+.widget-icon {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.widget-icon:hover {
+    background-color: #0056b3; /* Darken on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.widget-icon i {
+    margin-right: 10px;
+}
+
+.widget-icon a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.widget-icon a:hover {
+    text-decoration: none;
+}
+
+.img-fluid {
+    max-height: 300px;
+    object-fit: cover;
+}
+/* Style for the vertical line */
+.vertical-line {
+    height: 100%;           /* Makes the line span the full height */
+    border-left: 1px solid #000;  /* Vertical line (left border) */
+}
+.m1{
+    margin-left: 5px;
+}
+
+.col-md-7 p{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+            font-weight: 400; /* Regular weight */
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+}
+.col-md-5 p{
+    text-align: justify;
+}
+
+.info-section {
+    background-color: #007bff; /* Background color */
+    color: white; /* Text color */
+    position: relative; /* To position the icon relative to the container */
+    padding: 30px 20px 30px 10px; /* Add space for the icon */
+    border-radius: 8px;
+}
+
+/* Icon in front of the background */
+.icon-border {
+    background-color: white; /* Icon background */
+    color: #007bff; /* Icon color */
+    border-radius: 50%; /* Circular icon */
+    padding: 20px;
+    font-size: 30px; /* Icon size */
+    position: absolute;
+    top: -25px; /* Position above the section */
+    left: 20px; /* Position to the left of the content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow for the icon */
+}
+
+.info-section h5 {
+   
+    margin-bottom: 10px;
+   text-align: center;
+}
+
+.info-section p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.info-section a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-section a:hover {
+    text-decoration: underline;
+}
+
+/* Align items properly */
+.info-section .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background: #eceeef;
+}
+
+
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+  /* General Form Styles */
+  .contact-form {
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #ddd;    /* Border around the form */
+    border-radius: 8px;        /* Rounded corners */
+    padding: 30px;             /* Padding inside the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Form Fields & Button */
+.contact-form .form-group {
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+.contact-form label {
+   
+    color: #333;       /* Dark color for labels */
+}
+
+.contact-form .form-control {
+    border-radius: 5px;  /* Rounded form fields */
+    box-shadow: none;     /* Remove default input box-shadow */
+    border: 1px solid #ced4da; /* Lighter border color */
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff; /* Blue border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow */
+}
+
+.contact-form button {
+    background-color: #007bff; /* Primary button color */
+    color: white;               /* Button text color */
+    border: none;               /* Remove border */
+    padding: 10px 20px;         /* Button padding */
+    font-size: 16px;            /* Button font size */
+    border-radius: 5px;         /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .contact-form {
+        padding: 20px; /* Reduce padding on small screens */
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 15px; /* Reduce space between fields */
+    }
+}
+.float1 {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 123px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  .bounce {
+    animation: 2s ease 1s normal none infinite bounce;
+  }
+  @keyframes bounce {
+
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    40% {
+      transform: translateY(-20px);
+    }
+  
+    60% {
+      transform: translateY(-12px);
+    }
+  }
+  
+.bounce1 {
+    animation: bounce1 2s infinite;
+  }
+  
+  @keyframes bounce1 {
+  
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    40% {
+      transform: translateY(-20px);
+    }
+  
+    60% {
+      transform: translateY(-12px);
+    }
+  }
+  .ac1  {
+    margin-top: 15px;
+  }
+  .my-float {
+    margin-top: 16px;
+  }
+  .whatsapp-icon {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+.bounce {
+    animation: 3s ease 1s normal none infinite bounce;
+  }
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the same position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up by 10px at halfway */
+    }
+}
+
+/* Hover Effect */
+.whatsapp-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+.col-md-12 p{
+    text-align: justify;
+}
+.navbar .btn-danger {
+    margin-right: 20px; /* Push the button to the right */
+    height: 50px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+/* Apply custom font style for the checkboxes */
+.form-check-label {
+    font-family: 'Roboto', sans-serif; /* Use modern font like Roboto */
+    font-size: 1.1rem; /* Increase font size for better readability */
+    font-weight: 500; /* Medium font weight for better visual hierarchy */
+    color: #333; /* Dark grey color for the text */
+    line-height: 1.6; /* Increase line height for better spacing */
+    margin-left: 10px; /* Add space between checkbox and label */
+}
+
+.form-check-input {
+    width: 1.5rem; /* Slightly larger checkbox size */
+    height: 1.5rem;
+    border-radius: 4px; /* Rounded corners for the checkbox */
+}
+
+/* Add spacing between checkboxes */
+.form-check {
+    margin-bottom: 15px; /* Add space between checkboxes for better readability */
+}
+
+/* Optional: Change hover effect to enhance the user experience */
+.form-check-input:hover {
+    border-color: #007bff; /* Blue border on hover */
+    background-color: #e7f1ff; /* Light blue background on hover */
+}
