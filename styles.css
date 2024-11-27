@@ -213,9 +213,7 @@ section p {
     transform: translateY(-6px);
   }
 }
-.carousel-item img{
-    height: 500px;
-}
+
 /* Sticky Navbar Styling */
 .sticky {
     background-color: #111;
