@@ -442,6 +442,9 @@ section p {
 }
 .product-link p{
     margin-top:5px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
 }
 /* Style the h2 element */
 .col-md-12 h2 {
